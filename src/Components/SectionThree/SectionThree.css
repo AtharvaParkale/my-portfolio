@@ -1,0 +1,109 @@
+.sectionThree_container {
+    /* border: 2px solid rgb(255, 255, 255); */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #191627;
+}
+.skills-holder{
+       /* border: 2px solid rgb(255, 255, 255); */
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.skills-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       /* border: 2px solid rgb(255, 255, 255); */
+    flex-direction: column;
+}
+.skills-header h1{
+       /* border: 2px solid rgb(255, 255, 255); */
+    margin: 0;
+    color: white;
+    margin-bottom: 1.5vh;
+}
+.skills-header span{
+    font-weight: 500;
+       /* border: 2px solid rgb(255, 255, 255); */
+    text-align: center;
+    color: #BCBAC4;
+}
+.icon-holder{
+       /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 75%;
+}
+.icon-holder-row{
+       /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.icon-box{
+    width: 100px;
+    height: 100px;
+       /* border: 2px solid rgb(255, 255, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+.icon-image{
+    /* border: 2px solid rgb(255, 255, 255); */
+    height: 55px;
+    width: 55px;
+}
+.icon-image img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.icon-image img:hover{
+ transform: rotate(25deg);
+}
+.icon-box span{
+    /* border: 2px solid rgb(255, 255, 255); */
+    font-size: 15px;
+    font-weight: 500;
+    color: #BCBAC4;
+}
+
+
+@media(max-width:500px){
+   
+    .skills-holder{
+        width: 100%;
+        
+    }
+
+    .skills-header h1 {
+        font-size: 30px;
+    }
+    .skills-header span{
+        font-size: 13px;
+    }
+    .icon-holder{
+         width: 75%;
+    }
+    .icon-image{
+        width: 40px;
+        height: 40px;
+    }
+    .icon-box span{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,229 @@
+.sectionOne_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 92vh;
+    /* flex-direction: column; */
+    background-color: #191627;
+}
+.sectionOne_innercontainer1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    width: 50%;
+    /* height: 90%; */
+}
+.sectionone_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-bottom: 9vh;
+    color: hsl(270deg 8% 95%);
+}
+.sectionone_header h1{
+    /* border: 2px solid black; */
+    font-size: 56px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-bottom: 3vh;
+    width: 100%;
+    text-align: left;
+    color: hsl(270deg 8% 95%);
+}
+.sectionone_header span{
+    font-weight: 600;
+}
+.sectionone_header p{
+    /* border: 2px solid rgb(255, 255, 255); */
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #0000009e;
+
+    color: hsl(250deg 8% 75%);
+    width: 100%;
+    text-align: left;
+    line-height: 1.8;
+}
+    
+
+.sectionOne_innercontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(254, 254, 254); */
+    
+    /* height: 383px;
+    width: 612px; */
+    height: 70%;
+    width: 40%;
+}
+.sectionOne_innercontainer2-image-holder{
+    /* border: 2px solid white; */
+    height: 70%;
+    width: 55%;
+    border-radius: 31% 69% 77% 23% / 73% 61% 39% 27% ;
+    
+
+}
+
+.sectionOne_innercontainer2-image-holder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 31% 69% 77% 23% / 73% 61% 39% 27% ;
+}
+
+/* .sectionOne_innercontainer2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+.sectionone_buttons{
+    /* border: 2px solid #ffffff; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    width: 80%;
+    /* flex-direction: ; */
+}
+.sectionone_buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 53px;
+    font-size: 22px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #0000009e;
+}
+
+#btn-1{
+    /* border: 3px solid rgba(0,0,0,.29); */
+    background: rgba(0,0,0,.02);
+    margin-right: 2vw;
+
+}
+#btn-2 {
+    border: none;
+    color: white;
+    /* background-color: #02C39A; */
+    /* background-color: #f7722a; */
+    background-color: #6e57e0;
+    font-size: 17px;
+    border-radius: 7px;
+}
+
+.sectionOne_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 8vh;
+    z-index: 5;
+}
+.sectionbutton_unactive {
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: #191627;
+    border: none;
+}
+.sectionbutton_active{
+    background-color: #6e57e0;
+    color: white;
+}
+.link_holder{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(max-width:500px) {
+
+   
+    .sectionOne_container {
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+
+    .sectionOne_innercontainer1 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .sectionone_header {
+        width: 90%;
+        margin-bottom: 5vh;
+        
+    }
+
+    .sectionone_header h1 {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .sectionone_header p {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .sectionOne_innercontainer2 {
+        /* display: none; */
+        height: 36%;
+        width: 90%;
+    }
+
+    .sectionone_buttons {
+        flex-direction: column;
+    }
+
+    .sectionone_buttons input {
+        width: 250px;
+        height: 36px;
+        font-size: 16px;
+        margin-bottom: 3vh;
+
+    }
+    #btn-1{
+        margin-right: 0;
+    }
+
+    .sectionone_buttons button{
+        width: 155px;
+        height: 40px; 
+        font-size: 16px;
+    }
+    .sectionbutton_unactive{
+        font-size: 9px;
+    }
+    .sectionOne_navbar{
+        z-index: 100;
+    }
+   
+}
+
+
+
+
+
+

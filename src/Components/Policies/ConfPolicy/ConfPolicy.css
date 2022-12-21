@@ -1,0 +1,53 @@
+.confPolicy_container {
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.confPolicy_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px solid black; */
+    height: 30vh;
+    background-color: #81d8fc;
+}
+
+.confPolicy_header h1 {
+    color: white;
+    font-size: 30px;
+    /* border: 2px solid black; */
+    width: 70%;
+}
+
+.confPolicy_information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.confPolicy_info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 75%;
+    margin-bottom: 10vh;
+}
+
+.confPolicy_info h6 {
+    font-size: 16px;
+    margin-bottom: 0.1vh;
+    font-weight: 500;
+
+}
+
+.confPolicy_info p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1vh;
+    line-height: 1.5;
+}

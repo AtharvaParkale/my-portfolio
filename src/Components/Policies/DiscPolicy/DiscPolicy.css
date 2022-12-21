@@ -1,0 +1,47 @@
+.discPolicy_container{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.discPolicy_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* border: 2px solid black; */
+    height: 30vh;
+    background-color:#81d8fc ;
+}
+.discPolicy_header h1{
+    color: white;
+    font-size: 30px;
+    /* border: 2px solid black; */
+    width: 70%;
+}
+.discPolicy_information{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.discPolicy_info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: 75%;
+    margin-bottom: 10vh;
+}
+.discPolicy_info h6{
+    font-size: 16px;
+    margin-bottom: 0.1vh;
+    font-weight: 500;
+
+}
+.discPolicy_info p{
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 1vh;
+}

@@ -1,0 +1,97 @@
+.contactUs_container{
+    width: 100%;
+    background-image: url('./Images/background.png');
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+    background-size: cover;
+    /* border: 2px  solid red; */
+}
+.contactUs_address{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    /* border: 2px solid black; */
+    height: 60vh;
+}
+.contactUs_map{
+    border: 2px solid black;
+    width: 25%;
+    height: 65%;
+}
+.contactUs_place{
+    /* border: 2px solid black; */
+    width: 25%;
+    height: 65%;
+}
+.contactUs_place p{
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.contactUs_place h6{
+    width: 100%;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.contactUs_form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+.contactUs_form h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 16vw;
+}
+.contactUs_form_inputs{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 16vw;
+    width: 35%;
+    margin-bottom: 12vh;
+}
+.contactUs_form_inputs select{
+    color: #303030;
+    font-size: 16px;
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 5vh;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.contactUs_form_inputs label{
+    color: #7c7c7c;
+    font-size: 16px;
+    margin-bottom: 1vh;
+}
+.contactUs_form_inputs input{
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 5vh;
+}
+.contactUs_form_inputs textarea{
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 5vh;
+}
+
+.contactUs_form_inputs button{
+    background-color: #007bff;
+    color: #434242;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 137px;
+    height: 43px;
+}
