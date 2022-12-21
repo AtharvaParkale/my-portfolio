@@ -11,7 +11,7 @@ function LoadingScreen() {
               <ReactLoading
                 className="loading-animation"
                 type={"bars"}
-                color="#05435d"
+                color="#6e57e0"
               />
             </div>
           </div>

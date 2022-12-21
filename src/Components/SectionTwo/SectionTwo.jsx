@@ -16,34 +16,26 @@ function SectionTwo() {
         <div className="about_text">
           <h1>About Me</h1>
           <p className="txt_abt">
-            I'm a third year student pursuing computer science engineering at
-            Vellore Institue Of Technology, Vellore. I'm a fullstack web
-            developer with a profound knowledge of MERN stack.
-            <br />I love to update my tech stack with latest technologies. I
-            have completed two internships until now, and have worked on many
-            different projects.
+            I'm a third-year student pursuing computer science engineering at
+            Vellore Institue Of Technology. I'm a full-stack web developer with
+            a profound knowledge of the MERN stack.<br/> I love to update my tech
+            stack with the latest technologies. I have completed two internships
+            until now, and have worked on many different projects.
           </p>
 
           <div className="stat-holder">
-
             <div className="stat">
-
               <h2 className="stat-val">10+</h2>
 
-                <p>
-                  Projects
-                </p>
-
+              <p>Projects</p>
             </div>
             <div className="stat">
               <h2 className="stat-val">02+ yr</h2>
-                <p>
-                  Dev Experience
-                </p>
+              <p>Dev Experience</p>
             </div>
             <div className="stat">
               <h2 className="stat-val">02</h2>
-              <p >Internships</p>
+              <p>Internships</p>
             </div>
           </div>
           <div className="cv-button">
