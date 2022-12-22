@@ -1,46 +1,48 @@
 .sectionSeven_container{
-    /* border: 2px solid black; */
+    
+    /* border: 2px solid white; */
     display: flex;
     align-items: center;
     /* justify-content: center; */
     width: 100%;
     height: 100vh;
     flex-direction: column;
+    background-color: #191627;
 }
 .sectionSeven_container h1{
     margin-top: 12vh;
     margin-bottom: 10vh;
-    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: #000000c7
+    color: white;
 
 }
+
+
 .sectionSeven_cardholders{
     width: 90%;
-    /* border: 2px solid red; */
+    /* border: 2px solid white; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 70%;
 }
 .card{
-    /* border: 2px solid black; */
+    /* border: 2px solid white; */
     width: 19vw;
-    /* height: 48vh; */
     height: 80%;
-    border-radius: 11px;
-    box-shadow: 4px 4px 9px #00000099;
+    border-radius: 15px;
     display: flex;
     align-items: center;
-    /* justify-content: cente   r; */
     flex-direction: column;
     margin-left: 7vh;
+    background-color: hsl(250deg 30% 8%);
 }
 .card_image{
-    /* border: 2px solid black; */
-    width: 45%;
+    /* border: 2px solid white; */
+    width: 79%;
     height: 40%;
     margin-top: 4vh;
+    margin-bottom: 1vh;
     /* margin-right: 0; */
 }
 .card_image img{
@@ -48,13 +50,21 @@
     height: 100%;
     object-fit: contain;
 }
-.card p{
-    /* border: 2px solid black; */
-    width: 80%;
-    text-align: center;
+.card h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    color: #0000009e;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 3vh;
+}
+
+
+.card button {
+    color: white;
+    border-radius: 7px;
+    border: none;
+    height: 6vh;
+    width: 8vw;
+    background-color: #6e57e0;
 }
 .swiper {
     display: flex;
@@ -62,12 +72,31 @@
     justify-content: center;
     width: 90%;
     height: 80%;
-    /* border: 2px solid black; */
+    /* border: 2px solid white; */
+}
+
+.swiper-button-prev:after{
+    color: #6e57e0;
+}
+.swiper-button-next:after{
+    color: #6e57e0;
+}
+.swiper-pagination-bullet-active{
+    background-color:#6e57e0 !important ;
 }
 @media(max-width:500px){
     .card{
         width: 60vw;
         height: 47vh;
         margin-left: 10.9vw;
+    }
+    .card h2{
+        font-size: 15px;
+        margin-bottom: 4vh;
+    }
+
+    .card button{
+        height: 5vh;
+        width: 25vw;
     }
 }

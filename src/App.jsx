@@ -29,7 +29,7 @@ function App() {
           <SectionSeven />
 
           <SectionFour />
-          <SectionFive />
+          {/* <SectionFive /> */}
           
           <SectionEight />
           <Footer />

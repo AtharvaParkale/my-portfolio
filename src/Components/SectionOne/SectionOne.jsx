@@ -246,11 +246,11 @@ function SectionOne() {
               // setSecBtn7(false);
             }}
           >
-            Qualification
+            Assign
           </button>
         </Link>
 
-        <Link
+        {/* <Link
           to="section-five"
           smooth={true}
           duration={750}
@@ -260,19 +260,11 @@ function SectionOne() {
             className={
               "sectionbutton_unactive " + (secBtn6 && "sectionbutton_active")
             }
-            onClick={() => {
-              // setSecBtn1(false);
-              // setSecBtn2(false);
-              // setSecBtn3(false);
-              // setSecBtn4(false);
-              // setSecBtn5(false);
-              // // setSecBtn6(true);
-              // setSecBtn7(false);
-            }}
+          
           >
-            Assign
+            Qualification
           </button>
-        </Link>
+        </Link> */}
 
         <Link
           to="section-eight"
