@@ -65,6 +65,11 @@
     height: 6vh;
     width: 8vw;
     background-color: #6e57e0;
+    font-weight: 600 ;
+}
+
+.card button:hover{
+    background-color: #5744b7;
 }
 .swiper {
     display: flex;

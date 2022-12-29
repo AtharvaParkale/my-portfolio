@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    scroll-behavior: smooth;
 }
 .four-inner{
     /* border: 2px solid white; */
@@ -51,6 +52,9 @@
     background-color: #6e57e0;
     font-weight: 600;
 }
+.four-one button:hover{
+    background-color: #5744b7;
+}
 
 
 .four-two{
@@ -77,6 +81,7 @@
 @media(max-width:500px){
     .sectionFour_container{
         flex-direction: column;
+        height: 94vh;
     }
     .four-inner{
         flex-direction: column;

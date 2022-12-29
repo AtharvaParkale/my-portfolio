@@ -74,6 +74,12 @@
     background-color: #6e57e0;
 }
 
+.sectionSix_contentSection button:hover{
+    background-color: #5744b7;
+
+}
+
+
 .sectionSix_contentSection a{
     color: white;
     font-weight: 600;
@@ -98,6 +104,9 @@
     height: 100%;
 }
 @media(max-width:500px){
+    .sectionSix_container{
+        height: 80vh;
+    }
     .sectionSix_navbar{
         width: 95%;
     }

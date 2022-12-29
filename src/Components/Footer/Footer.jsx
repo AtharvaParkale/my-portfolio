@@ -7,7 +7,6 @@ function Footer() {
   const [footerArrow, setFooterArrow] = useState(false);
 
   const setArrow = () => {
-    console.log(window.scrollY);
     if (window.scrollY < 110) {
       setFooterArrow(false);
     } else {
@@ -26,7 +25,7 @@ function Footer() {
       </div>
       {footerArrow ? (
         <div className="scroll_up">
-          <Link to="section-one" smooth={true} duration={900}>
+          <Link to="section-one" >
             <HiArrowCircleUp size={60} />
           </Link>
         </div>

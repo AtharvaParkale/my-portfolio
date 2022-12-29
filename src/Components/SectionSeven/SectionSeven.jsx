@@ -19,7 +19,6 @@ function SectionSeven() {
 
   const setNumCard = (n) => {
     if (window.innerWidth < 600) {
-      // console.log("hi jhbhbas")
       setNCard(1);
     } else {
       setNCard(3);
@@ -43,8 +42,8 @@ function SectionSeven() {
           slidesPerView={nCard}
           navigation
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
         >
           <SwiperSlide>
             <div className="card">

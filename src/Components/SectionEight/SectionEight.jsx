@@ -1,7 +1,6 @@
 import React from "react";
 import "./SectionEight.css";
 import { EmailOutlined, PhoneOutlined } from "@mui/icons-material";
-
 import { BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 
 function SectionEight() {
