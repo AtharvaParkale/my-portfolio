@@ -24,13 +24,10 @@ function App() {
           <SectionOne />
           <SectionTwo />
           <SectionThree />
-          
           <SectionSix />
           <SectionSeven />
-
           <SectionFour />
           {/* <SectionFive /> */}
-          
           <SectionEight />
           <Footer />
         </div>

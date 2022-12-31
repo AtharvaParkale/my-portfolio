@@ -13,8 +13,16 @@ function SectionOne() {
   const [secBtn7, setSecBtn7] = useState(false);
 
   const changeNavColor = () => {
-    // console.log(window.scrollY)
-    if (window.scrollY >= 500) {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 500 && window.innerWidth > 500) {
+      //About me
+      setSecBtn1(true);
+      setSecBtn2(false);
+      setSecBtn3(false);
+      setSecBtn4(false);
+      setSecBtn5(false);
+      setSecBtn7(false);
+    } else if (window.scrollY >= 420 && window.innerWidth <= 500) {
       //About me
       setSecBtn1(true);
       setSecBtn2(false);
@@ -26,8 +34,17 @@ function SectionOne() {
       setSecBtn1(false);
     }
 
-    if (window.scrollY >= 1200) {
+    if (window.scrollY >= 1200 && window.innerWidth > 500) {
       //Skills
+      setSecBtn1(false);
+      setSecBtn2(true);
+      setSecBtn3(false);
+      setSecBtn4(false);
+      setSecBtn5(false);
+      setSecBtn7(false);
+    } else if (window.scrollY >= 1200 && window.innerWidth <= 500) {
+      //Skills
+      // console.log("Skills");
       setSecBtn1(false);
       setSecBtn2(true);
       setSecBtn3(false);
@@ -38,8 +55,17 @@ function SectionOne() {
       setSecBtn2(false);
     }
 
-    if (window.scrollY >= 1900) {
+    if (window.scrollY >= 1900 && window.innerWidth > 500) {
       //my work
+      setSecBtn1(false);
+      setSecBtn2(false);
+      setSecBtn3(true);
+      setSecBtn4(false);
+      setSecBtn5(false);
+      setSecBtn7(false);
+    } else if (window.scrollY >= 2100 && window.innerWidth <= 500) {
+      //Skills
+      // console.log("Skills");
       setSecBtn1(false);
       setSecBtn2(false);
       setSecBtn3(true);
@@ -49,7 +75,17 @@ function SectionOne() {
     } else {
       setSecBtn3(false);
     }
-    if (window.scrollY >= 2600) {
+
+    if (window.scrollY >= 2600 && window.innerWidth > 500) {
+      setSecBtn1(false);
+      setSecBtn2(false);
+      setSecBtn3(false);
+      setSecBtn4(true);
+      setSecBtn5(false);
+      setSecBtn7(false);
+    } else if (window.scrollY >= 2800 && window.innerWidth <= 500) {
+      //Skills
+      // console.log("Skills");
       setSecBtn1(false);
       setSecBtn2(false);
       setSecBtn3(false);
@@ -60,7 +96,16 @@ function SectionOne() {
       setSecBtn4(false);
     }
 
-    if (window.scrollY >= 3500) {
+    if (window.scrollY >= 3500 && window.innerWidth > 500) {
+      setSecBtn1(false);
+      setSecBtn2(false);
+      setSecBtn3(false);
+      setSecBtn4(false);
+      setSecBtn5(true);
+      setSecBtn7(false);
+    } else if (window.scrollY >= 3490 && window.innerWidth <= 500) {
+      //Skills
+      // console.log("Skills");
       setSecBtn1(false);
       setSecBtn2(false);
       setSecBtn3(false);
@@ -71,7 +116,16 @@ function SectionOne() {
       setSecBtn5(false);
     }
 
-    if (window.scrollY >= 4136) {
+    if (window.scrollY >= 4136 && window.innerWidth > 500) {
+      setSecBtn1(false);
+      setSecBtn2(false);
+      setSecBtn3(false);
+      setSecBtn4(false);
+      setSecBtn5(false);
+      setSecBtn7(true);
+    } else if (window.scrollY >= 4460 && window.innerWidth <= 500) {
+      //Skills
+      // console.log("Skills");
       setSecBtn1(false);
       setSecBtn2(false);
       setSecBtn3(false);

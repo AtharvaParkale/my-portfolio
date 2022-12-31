@@ -1,5 +1,4 @@
 import React from "react";
-import ReactLoading from "react-loading";
 import LoadingSticker from "../../assets/images/loading_bitmoji2.png";
 import "./LoadingScreen.css";
 function LoadingScreen() {
