@@ -1,5 +1,5 @@
 import React from "react";
-import LoadingSticker from "../../assets/images/loading_bitmoji2.png";
+import LoadingSticker from "../../assets/images/loading_bitmoji2-min.png";
 import "./LoadingScreen.css";
 function LoadingScreen() {
   return (

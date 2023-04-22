@@ -1,0 +1,147 @@
+[
+  {
+    "mern": [
+      {
+        "id":1,
+        "name": "ShopHub",
+        "description": "Using the MERN stack, I created a web application for shopping that includes a MongoDB database and a React-based frontend. The app allows users to browse and purchase products through a Node.js backend.",
+        "image": "shophub_thumbnail.png",
+        "github": "https://github.com/AtharvaParkale",
+        "demo": "https://github.com/AtharvaParkale"
+      },
+      {
+        "id":2,
+        "name": "Sociopedia",
+        "description": "Utilizing the MERN stack, I developed a social media web application that allows users to create profiles, post content, and interact with others. The app features a MongoDB database, a React-based frontend, and a Node.js backend.",
+        "image": "sociopedia_thumbnail.png",
+        "github": "https://github.com/AtharvaParkale/social-media-webapp",
+        "demo": "https://sociopedia-by-atharva.netlify.app/"
+      },
+      {
+        "id":3,
+        "name": "NoteHive",
+        "description": "This note-taking web application was created using the MERN stack, enabling users to create, update, and delete notes. The app includes a MongoDB database, a React-based frontend, and a Node.js backend for seamless functionality.",
+        "image": "notehive_thumbnail.png",
+        "github": "https://github.com/AtharvaParkale/note-hive",
+        "demo": "https://wondrous-croquembouche-558b7e.netlify.app/"
+      }
+    ],
+    "react": [
+      {
+        "id":1,
+        "name": "Calendar Module",
+        "description": "This is a ReactJS project that implements a calendar module, which allows users to create, delete, add, and update events. The module can be integrated into other web applications to provide users with a convenient way to manage their schedules.",
+        "image":"calendar_module.png",
+        "github": "https://github.com/AtharvaParkale/events-calendar",
+        "demo": "https://teamdashboard.in/"
+      },
+      {
+        "id":2,
+        "name": "Banking System",
+        "description": "This is a ReactJS project that implements a banking system that is integrated with Firebase, allowing users to send money to other users and view their own account balance.",
+        "image":"banking_system.png",
+        "github": "https://github.com/AtharvaParkale/Banking-System",
+        "demo": "https://clever-banach-b6b540.netlify.app/"
+      },
+      {
+        "id":3,
+        "name": "Portfolio Website",
+        "description": "This is a portfolio website built using ReactJS, a powerful JavaScript library for building user interfaces. The website features a modern and responsive design with intuitive navigation and smooth user experience.",
+        "image":"portfolio_website.png",
+        "github": "https://github.com/AtharvaParkale/my-portfolio",
+        "demo": "https://atharvaparkale.netlify.app/"
+      },
+      {
+        "id":4,
+        "name": "Compound Interest",
+        "description": "This project is a compound interest calculator built using ReactJS. The calculator takes input values such as principal, interest rate, and tenure, and calculates the final amount of the investment after a specified period of time.",
+        "image":"compound_interest.png",
+        "github": "https://github.com/AtharvaParkale/compound-interest-calculator",
+        "demo": "https://compound-interest-atharva.netlify.app/"
+      },
+      {
+        "id":5,
+        "name": "GST Calculator",
+        "description": "This is a simple GST (Goods and Services Tax) calculator that has been built using ReactJS. The calculator takes inputs such as the product's price and GST rate and calculates the total cost of the product, including GST.",
+        "image":"gst_calculator.png",
+        "github": "https://github.com/AtharvaParkale/GST-Calculator",
+        "demo": "https://gst-calculator-by-atharva.netlify.app/"
+      },
+      {
+        "id":6,
+        "name": "Simple Interest",
+        "description": "This project is a simple interest calculator built using ReactJS. The calculator takes input values such as principal, interest rate, and tenure and calculates the interest accrued on the principal amount over a specified period of time.",
+        "image":"simple_interest.png",
+        "github": "https://github.com/AtharvaParkale/simple-interest-calculator",
+        "demo": "https://simple-calculator-atharva.netlify.app/"
+      },
+      {
+        "id":7,
+        "name": "Credit Calculator",
+        "description": "This calculator can be used for calculating the tax payable under CGST, IGST and SGST and also for calculating Input tax credit which is allowed in all scenarios. The input tax credit to be carried forward to next month/quarter will be showed at the end.",
+        "image":"credit_calculator.png",
+        "github": "https://github.com/AtharvaParkale/Credit-Calculator",
+        "demo": "https://input-credit-calculator-by-atharva.netlify.app/"
+      },
+      {
+        "id":8,
+        "name": "Days Calculator",
+        "description": "This project is a days calculator built using ReactJS, which calculates the number of days between two dates inputted by the user. Additionally, it provides the number of minutes, seconds, and weeks between the two dates. ",
+        "image":"days_calculator.png",
+        "github": "https://github.com/AtharvaParkale/Day-Calculator",
+        "demo": "https://days-calculator-by-atharvaparkale.netlify.app/"
+      }
+    ],
+    "jscript": [
+      {
+        "id":1,
+        "name": "Ym Official Website",
+        "description": "This project is the official website of Yuva Marathi, a literary association at VIT Vellore, built by a team of four using HTML, CSS, and JavaScript. The website provides information about the association's activities, events, and achievements. ",
+        "image":"yuva_marathi.png",
+        "github": "https://github.com/AtharvaParkale/YuvaMarathi_Website",
+        "demo": "https://yuvamarathivit.in/"
+      },
+      {
+        "id":2,
+        "name": "Wack A Mole",
+        "description": "This project is an interactive 'Whack-a-Mole' game built using HTML, CSS, and JavaScript. The game features cute mole characters that pop up randomly from holes on the screen, and the player must quickly click on them to score points.",
+        "image":"wack_a_mole.png",
+        "github": "https://github.com/AtharvaParkale/wack_a_mole",
+        "demo": "https://spectacular-gecko-eecfcc.netlify.app/"
+      },
+      {
+        "id":3,
+        "name": "Web Cam",
+        "description": "This project is a webcam display web application built using HTML, CSS, and JavaScript. The application allows users to access and display video from their connected webcam directly on the screen.",
+        "image":"web_cam.png",
+        "github": "https://github.com/AtharvaParkale/wack_a_mole",
+        "demo": "https://spectacular-gecko-eecfcc.netlify.app/"
+      },
+      {
+        "id":4,
+        "name": "JS Canvas",
+        "description": "This project is a canvas-like web application built using HTML, CSS, and JavaScript. The application provides a blank canvas on which users can draw and create their own digital artwork using a variety of tools and features.",
+        "image":"js_canvas.png",
+        "github": "https://github.com/AtharvaParkale/My_Js_Projects/tree/master/Javascript30/Canvas",
+        "demo": "https://symphonious-lokum-a2e1bb.netlify.app/"
+      },
+      {
+        "id":5,
+        "name": "JS Clock",
+        "description": "This project is an analog clock built using JavaScript, HTML, and CSS. The clock displays the current time in a traditional analog format, with hour, minute, and second hands.",
+        "image":"js_clock.png",
+        "github": "https://github.com/AtharvaParkale/My_Js_Projects/tree/master/Javascript30/Clock",
+        "demo": "https://stunning-sunburst-616ee9.netlify.app/"
+      },
+      {
+        "id":6,
+        "name": "JS Timer",
+        "description": "This project is a timer built using JavaScript, HTML, and CSS. The timer allows users to set a specific duration of time and counts down until the time is up.",
+        "image":"js_timer.png",
+        "github": "https://github.com/AtharvaParkale/My_Js_Projects/tree/master/Javascript30/Countdown%20Timer",
+        "demo": "https://stunning-sunburst-616ee9.netlify.app/"
+      }
+     
+    ]
+  }
+]

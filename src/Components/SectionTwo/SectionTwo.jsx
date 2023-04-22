@@ -1,7 +1,6 @@
 import React from "react";
 import "./SectionTwo.css";
-import problem_image from "../../assets/images/about_me3.jpg";
-import solution_image from "../../assets/images/solution_image.jpg";
+import problem_image from "../../assets/images/about_me3-min.jpg";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
 function SectionTwo() {
@@ -16,11 +15,12 @@ function SectionTwo() {
         <div className="about_text">
           <h1>About Me</h1>
           <p className="txt_abt">
-            I'm a third-year student pursuing computer science engineering at
-            Vellore Institue Of Technology. I'm a full-stack web developer with
-            a profound knowledge of the MERN stack.<br/> I love to update my tech
-            stack with the latest technologies. I have completed two internships
-            until now, and have worked on many different projects.
+            I am a full-stack developer with over one year of experience in
+            ReactJs and NodeJs. I am passionate about building elegant, simple,
+            and functional software.
+            <br /> I love to update my tech stack with the latest technologies.
+            I have completed two internships until now, and have worked on many
+            different projects.
           </p>
 
           <div className="stat-holder">
@@ -39,7 +39,14 @@ function SectionTwo() {
             </div>
           </div>
           <div className="cv-button">
-            <button>
+            <button
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1E81AjE1bZV_f2ubWjR8MY66caw1H7sev/view?usp=sharing",
+                  "_blank"
+                );
+              }}
+            >
               <span>Download CV</span> <FileDownloadOutlinedIcon />
             </button>
           </div>

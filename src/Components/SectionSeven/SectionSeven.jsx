@@ -7,12 +7,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import timerimg from '../../assets/images/thumbnails/timer.png'
-import wackimg from '../../assets/images/thumbnails/wack.png'
-import webcamimg from '../../assets/images/thumbnails/webcam.png'
-import clockimg from '../../assets/images/thumbnails/clock.png'
-import canvasimg from '../../assets/images/thumbnails/canvas.png'
-import yuvaimg from '../../assets/images/thumbnails/yuva.png'
+
+import timerimg from '../../assets/images/projects/js/js_timer.png'
+import wackimg from '../../assets/images/projects/js/wack_a_mole.png'
+import webcamimg from '../../assets/images/projects/js/web_cam.png'
+import clockimg from '../../assets/images/projects/js/js_clock.png'
+import canvasimg from '../../assets/images/projects/js/js_canvas.png'
+import yuvaimg from '../../assets/images/projects/js/yuva_marathi.png'
 
 function SectionSeven() {
   const [nCard, setNCard] = useState(4);

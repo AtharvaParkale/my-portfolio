@@ -1,7 +1,6 @@
 import React from "react";
 import "./SectionFour.css";
-import assign_img from "../../assets/images/assign_img.png";
-import { Link } from "react-router-dom";
+import assign_img from "../../assets/images/assign_img-min.png";
 
 function SectionFour() {
   return (

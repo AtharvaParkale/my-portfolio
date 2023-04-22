@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./SectionSix.css";
-// import img1 from "../../assets/images/sec6_img1.png";
-import img2 from "../../assets/images/sec6_img2.png";
-import img3 from "../../assets/images/sec6_img3.png";
-import img4 from "../../assets/images/sec6_img4.png";
-import img5 from "../../assets/images/sec6_img5.png";
-import video1 from "../../assets/videos/calendar.mp4";
+import { Box } from "@mui/material";
+import Button from "@mui/material/Button";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
+import data from "./projects.json";
 
-// className={"menu " + (menuOpen && "menu_active")}
+
 
 function SectionSix() {
   const [btn1, setBtn1] = useState(true);
@@ -27,8 +26,9 @@ function SectionSix() {
             setBtn4(false);
             setBtn5(false);
           }}
+        
         >
-          Calendar
+          # MERN
         </button>
         <button
           className={"sectionSix_beforeBtnclick " + (btn2 && "btn_active")}
@@ -40,7 +40,7 @@ function SectionSix() {
             setBtn5(false);
           }}
         >
-          GST
+          # REACT
         </button>
         <button
           className={"sectionSix_beforeBtnclick " + (btn3 && "btn_active")}
@@ -52,9 +52,9 @@ function SectionSix() {
             setBtn5(false);
           }}
         >
-          Credit
+          # JSCRIPT
         </button>
-        <button
+        {/* <button
           className={"sectionSix_beforeBtnclick " + (btn4 && "btn_active")}
           onClick={() => {
             setBtn1(false);
@@ -64,9 +64,9 @@ function SectionSix() {
             setBtn5(false);
           }}
         >
-          Days
-        </button>
-        <button
+          remove
+        </button> */}
+        {/* <button
           className={"sectionSix_beforeBtnclick " + (btn5 && "btn_active")}
           onClick={() => {
             setBtn1(false);
@@ -76,125 +76,640 @@ function SectionSix() {
             setBtn5(true);
           }}
         >
-          Banking
-        </button>
+          #FIREBASE
+        </button> */}
       </div>
       <div className="sectionSix_content">
-        <div className="sectionSix_contentSection sectionSix_contentSection_one">
+        <Box
+          className="sectionSix_contentSection sectionSix_contentSection_one"
+          sx={{
+            // border: "2px solid white",
+            overflow:"hidden"
+          }}
+        >
           {btn1 ? (
             <>
-              <h2>Calendar </h2>
-              <p>
-                This web app helps the user to mark an event on the calendar. I
-                have used ReactJS and AWS APIs to build this web app. <br />
-                <br />
-                <button>
-                  <a
-                    href="https://github.com/AtharvaParkale/events-calendar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Check
-                  </a>
-                </button>
-              </p>
+              <Box
+                sx={{
+                  // border: "2px solid blue",
+                  width: { xs: "100%", sm: "80%" },
+                  height: "100%",
+                  overflowY: "auto",
+                  marginTop:"0vh"
+                }}
+                className="project-card-container"
+              >
+                {data.map((project) =>
+                  project.mern.map((item) => (
+                    <Box
+                      className="project-card-holder"
+                      sx={{
+                        // border: "2px solid red",
+                        width: "80%",
+                        margin: "0 auto",
+                        minHeight: "30vh",
+                        marginBottom: "4vh",
+                        display: "flex",
+                        flexDirection: { xs: "column", sm: "row" },
+                        alignItems: "center",
+                        justifyContent: "space-evenly",
+                        backgroundColor: "#100e1b",
+                        borderRadius: "15px",
+                        boxShadow:"1px 1px 8px white",
+                        marginTop:"2vh"
+                      }}
+                      id={item.id}
+                    >
+                      <Box
+                        className="project-card-holder-sec-one"
+                        sx={{
+                          // border: "2px solid white",
+                          width: { xs: "90%", sm: "27%" },
+                          minHeight: { xs: "20vh", sm: "25vh" },
+                          marginTop: { xs: "2vh", sm: "0" },
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          borderRadius:"10px"
+                        }}
+                      >
+                        <img
+                          src={require('../../assets/images/projects/mern/' + item.image)}
+                          className="project-card-image"
+                          alt="Not found"
+                        />
+                      </Box>
+                      <Box
+                        className="project-card-holder-sec-two"
+                        sx={{
+                          // border: "2px solid white",
+                          width: { xs: "100%", sm: "60%" },
+                          minHeight: "22vh",
+                          display: "flex",
+                          alignItems: "center",
+                          flexDirection: "column",
+                          justifyContent: "space-evenly",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "12vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                            marginBottom: "1vh",
+                          }}
+                        >
+                          <h2>{item.name}</h2>
+                          <p>{item.description}</p>
+                        </Box>
+
+                        <Box
+                          sx={{
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "7vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: { xs: "center", sm: "flex-start" },
+                            marginBottom:"2vh",
+                          }}
+                        >
+                          <Button
+                            startIcon={<GitHubIcon />}
+                            variant="contained"
+                            href={item.github} 
+                            target="_blank"
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            GitHub
+                          </Button>
+                          <Button
+                            startIcon={<LanguageIcon />}
+                            variant="contained"
+                            href={item.demo} 
+                            target="_blank"
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                            }}
+                          >
+                            Demo
+                          </Button>
+                        </Box>
+                      </Box>
+                    </Box>
+                  ))
+                )}
+              </Box>
             </>
           ) : btn2 ? (
             <>
-              <h2>GST Calculator</h2>
-              <p>
-                This is an advanced GST calculator made using ReactJs. This web
-                app helps the user to calculate GST at different rates. It also
-                provides a full breakdown of GST.
-                <br />
-                <br />
-                <a
-                  href="https://gst-calculator-by-atharva.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Check</button>
-                </a>
-              </p>
-            </>
+            <Box
+              sx={{
+                // border: "2px solid blue",
+                width: { xs: "100%", sm: "80%" },
+                height: "100%",
+                overflowY: "auto",
+                marginTop:"0vh"
+              }}
+              className="project-card-container"
+            >
+              {data.map((project) =>
+                project.react.map((item) => (
+                  <Box
+                    className="project-card-holder"
+                    id={item.id}
+                    sx={{
+                      // border: "2px solid red",
+                      width: "80%",
+                      margin: "0 auto",
+                      minHeight: "30vh",
+                      marginBottom: "4vh",
+                      display: "flex",
+                      flexDirection: { xs: "column", sm: "row" },
+                      alignItems: "center",
+                      justifyContent: "space-evenly",
+                      backgroundColor: "#100e1b",
+                      borderRadius: "15px",
+                      boxShadow:"1px 1px 8px white",
+                      marginTop:"2vh"
+                    }}
+                  >
+                    <Box
+                      className="project-card-holder-sec-one"
+                      sx={{
+                        // border: "2px solid white",
+                        width: { xs: "90%", sm: "27%" },
+                        minHeight: { xs: "20vh", sm: "25vh" },
+                        marginTop: { xs: "2vh", sm: "0" },
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        borderRadius:"10px"
+                      }}
+                    >
+                      <img
+                        src={require('../../assets/images/projects/reactjs/' + item.image)}
+                        className="project-card-image"
+                        alt="Not found"
+                      />
+                    </Box>
+                    <Box
+                      className="project-card-holder-sec-two"
+                      sx={{
+                        // border: "2px solid white",
+                        width: { xs: "100%", sm: "60%" },
+                        minHeight: "22vh",
+                        display: "flex",
+                        alignItems: "center",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          // border: "2px solid white",
+                          width: "100%",
+                          minHeight: "12vh",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                          marginBottom: "1vh",
+                        }}
+                      >
+                        <h2>{item.name}</h2>
+                        <p>{item.description}</p>
+                      </Box>
+
+                      <Box
+                        sx={{
+                          // border: "2px solid white",
+                          width: "100%",
+                          minHeight: "7vh",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: { xs: "center", sm: "flex-start" },
+                          marginBottom:"2vh",
+                        }}
+                      >
+                        <Button
+                          startIcon={<GitHubIcon />}
+                          variant="contained"
+                          href={item.github} 
+                          target="_blank"
+                          sx={{
+                            marginRight: "1vw",
+                            backgroundColor: "#6e57e0",
+                            fontSize: { xs: "10px", sm: "12px" },
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          GitHub
+                        </Button>
+                        <Button
+                          startIcon={<LanguageIcon />}
+                          variant="contained"
+                          href={item.demo} 
+                          target="_blank"
+                          sx={{
+                            marginRight: "1vw",
+                            backgroundColor: "#6e57e0",
+                            fontSize: { xs: "10px", sm: "12px" },
+                          }}
+                        >
+                          Demo
+                        </Button>
+                      </Box>
+                    </Box>
+                  </Box>
+                ))
+              )}
+            </Box>
+          </>
           ) : btn3 ? (
             <>
-              <h2>Credit Calculator</h2>
-              <p>
-                This calculator can be used for calculating the tax payable
-                under CGST, IGST and SGST and also for calculating Input tax
-                credit which is allowed in all scenarios. This web app is made
-                using ReactJS.
-                <br />
-                <br />
-                <a
-                  href="https://input-credit-calculator-by-atharva.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Check</button>
-                </a>
-              </p>
-            </>
+            <Box
+              sx={{
+                // border: "2px solid blue",
+                width: { xs: "100%", sm: "80%" },
+                height: "100%",
+                overflowY: "auto",
+                marginTop:"0vh"
+              }}
+              className="project-card-container"
+            >
+              {data.map((project) =>
+                project.jscript.map((item) => (
+                  <Box
+                    className="project-card-holder"
+                    id={item.id}
+                    sx={{
+                      // border: "2px solid red",
+                      width: "80%",
+                      margin: "0 auto",
+                      minHeight: "30vh",
+                      marginBottom: "4vh",
+                      display: "flex",
+                      flexDirection: { xs: "column", sm: "row" },
+                      alignItems: "center",
+                      justifyContent: "space-evenly",
+                      backgroundColor: "#100e1b",
+                      borderRadius: "15px",
+                      boxShadow:"1px 1px 8px white",
+                      marginTop:"2vh"
+                    }}
+                  >
+                    <Box
+                      className="project-card-holder-sec-one"
+                      sx={{
+                        // border: "2px solid white",
+                        width: { xs: "90%", sm: "27%" },
+                        minHeight: { xs: "20vh", sm: "25vh" },
+                        marginTop: { xs: "2vh", sm: "0" },
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        borderRadius:"10px"
+                      }}
+                    >
+                      <img
+                        src={require('../../assets/images/projects/js/' + item.image)}
+                        className="project-card-image"
+                        alt="Not found"
+                      />
+                    </Box>
+                    <Box
+                      className="project-card-holder-sec-two"
+                      sx={{
+                        // border: "2px solid white",
+                        width: { xs: "100%", sm: "60%" },
+                        minHeight: "22vh",
+                        display: "flex",
+                        alignItems: "center",
+                        flexDirection: "column",
+                        justifyContent: "space-evenly",
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          // border: "2px solid white",
+                          width: "100%",
+                          minHeight: "12vh",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          flexDirection: "column",
+                          marginBottom: "1vh",
+                        }}
+                      >
+                        <h2>{item.name}</h2>
+                        <p>{item.description}</p>
+                      </Box>
+
+                      <Box
+                        sx={{
+                          // border: "2px solid white",
+                          width: "100%",
+                          minHeight: "7vh",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: { xs: "center", sm: "flex-start" },
+                          marginBottom:"2vh",
+                        }}
+                      >
+                        <Button
+                          startIcon={<GitHubIcon />}
+                          variant="contained"
+                          href={item.github} 
+                          target="_blank"
+                          sx={{
+                            marginRight: "1vw",
+                            backgroundColor: "#6e57e0",
+                            fontSize: { xs: "10px", sm: "12px" },
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                          }}
+                        >
+                          GitHub
+                        </Button>
+                        <Button
+                          startIcon={<LanguageIcon />}
+                          variant="contained"
+                          href={item.demo} 
+                          target="_blank"
+                          sx={{
+                            marginRight: "1vw",
+                            backgroundColor: "#6e57e0",
+                            fontSize: { xs: "10px", sm: "12px" },
+                          }}
+                        >
+                          Demo
+                        </Button>
+                      </Box>
+                    </Box>
+                  </Box>
+                ))
+              )}
+            </Box>
+          </>
           ) : btn4 ? (
             <>
-              <h2>Days Calculator</h2>
-              <p>
-                A basic web-app which calculates the number of days, minutes,
-                hours, weeks etc between two dates. This web app is made using
-                ReactJs
-                <br />
-                <br />
-                <a
-                  href="https://days-calculator-by-atharvaparkale.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Check</button>
-                </a>
-              </p>
+              <Box
+                sx={{
+                  border: "2px solid blue",
+                  width: { xs: "100%", sm: "80%" },
+                  height: "100%",
+                  overflowY: "auto",
+                }}
+                className="project-card-container"
+              >
+                {data.map((project) =>
+                  project.mern.map((item) => (
+                    <Box
+                      className="project-card-holder"
+                      sx={{
+                        border: "2px solid red",
+                        width: "80%",
+                        margin: "0 auto",
+                        minHeight: "35vh",
+                        marginBottom: "3vh",
+                        display: "flex",
+                        flexDirection: { xs: "column", sm: "row" },
+                        alignItems: "center",
+                        justifyContent: "space-evenly",
+                        backgroundColor: "#100e1b",
+                        borderRadius: "15px",
+                      }}
+                    >
+                      <Box
+                        className="project-card-holder-sec-one"
+                        sx={{
+                          border: "2px solid white",
+                          width: { xs: "90%", sm: "27%" },
+                          minHeight: { xs: "20vh", sm: "25vh" },
+                          marginTop: { xs: "2vh", sm: "0" },
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <img
+                          // src={img2}
+                          className="project-card-image"
+                          alt="Not found"
+                        />
+                      </Box>
+                      <Box
+                        className="project-card-holder-sec-two"
+                        sx={{
+                          border: "2px solid white",
+                          width: { xs: "100%", sm: "60%" },
+                          minHeight: "22vh",
+                          display: "flex",
+                          alignItems: "center",
+                          flexDirection: "column",
+                          justifyContent: "space-evenly",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            border: "2px solid white",
+                            width: "100%",
+                            minHeight: "12vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                            marginBottom: "1vh",
+                          }}
+                        >
+                          <h2>{item.name}</h2>
+                          <p>{item.description}</p>
+                        </Box>
+
+                        <Box
+                          sx={{
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "7vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: { xs: "center", sm: "flex-start" },
+                          }}
+                        >
+                          <Button
+                            startIcon={<GitHubIcon />}
+                            variant="contained"
+                            href=""
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            GitHub
+                          </Button>
+                          <Button
+                            startIcon={<LanguageIcon />}
+                            variant="contained"
+                            href=""
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                            }}
+                          >
+                            Demo
+                          </Button>
+                        </Box>
+                      </Box>
+                    </Box>
+                  ))
+                )}
+              </Box>
             </>
           ) : btn5 ? (
             <>
-              <h2>Banking System</h2>
-              <p>
-                This is basic banking system made using reactjs and firebase.
-                This web app enables the user to send money to other user.
-                <br />
-                <br />
-                <a
-                  href="https://clever-banach-b6b540.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button>Check</button>
-                </a>
-              </p>
+              <Box
+                sx={{
+                  // border: "2px solid blue",
+                  width: { xs: "100%", sm: "80%" },
+                  height: "100%",
+                  overflowY: "auto",
+                }}
+                className="project-card-container"
+              >
+                {data.map((project) =>
+                  project.mern.map((item) => (
+                    <Box
+                      className="project-card-holder"
+                      sx={{
+                        // border: "2px solid red",
+                        width: "80%",
+                        margin: "0 auto",
+                        minHeight: "35vh",
+                        marginBottom: "3vh",
+                        display: "flex",
+                        flexDirection: { xs: "column", sm: "row" },
+                        alignItems: "center",
+                        justifyContent: "space-evenly",
+                        backgroundColor: "#100e1b",
+                        borderRadius: "15px",
+                      }}
+                    >
+                      <Box
+                        className="project-card-holder-sec-one"
+                        sx={{
+                          // border: "2px solid white",
+                          width: { xs: "90%", sm: "27%" },
+                          minHeight: { xs: "20vh", sm: "25vh" },
+                          marginTop: { xs: "2vh", sm: "0" },
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <img
+                          // src={img2}
+                          className="project-card-image"
+                          alt="Not found"
+                        />
+                      </Box>
+                      <Box
+                        className="project-card-holder-sec-two"
+                        sx={{
+                          // border: "2px solid white",
+                          width: { xs: "100%", sm: "60%" },
+                          minHeight: "22vh",
+                          display: "flex",
+                          alignItems: "center",
+                          flexDirection: "column",
+                          justifyContent: "space-evenly",
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "12vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            flexDirection: "column",
+                            marginBottom: "1vh",
+                          }}
+                        >
+                          <h2>{item.name}</h2>
+                          <p>{item.description}</p>
+                        </Box>
+
+                        <Box
+                          sx={{
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "7vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: { xs: "center", sm: "flex-start" },
+                          }}
+                        >
+                          <Button
+                            startIcon={<GitHubIcon />}
+                            variant="contained"
+                            href=""
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            GitHub
+                          </Button>
+                          <Button
+                            startIcon={<LanguageIcon />}
+                            variant="contained"
+                            href=""
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                            }}
+                          >
+                            Demo
+                          </Button>
+                        </Box>
+                      </Box>
+                    </Box>
+                  ))
+                )}
+              </Box>
             </>
           ) : (
             ""
           )}
-        </div>
-        <div className="sectionSix_contentSection sectionSix_contentSection_two">
-          <div className="sec6_images">
-            {btn1 ? (
-              //   <img src={img1} alt="Image1" />
-              <video autoPlay loop muted>
-                <source src={video1} type="video/mp4" />
-              </video>
-            ) : btn2 ? (
-              <img src={img2} alt="Image2" />
-            ) : btn3 ? (
-              <img src={img3} alt="Image3" />
-            ) : btn4 ? (
-              <img src={img4} alt="Image4" />
-            ) : btn5 ? (
-              <img src={img5} alt="Image5" />
-            ) : (
-              ""
-            )}
-          </div>
-        </div>
+        </Box>
       </div>
     </div>
   );
