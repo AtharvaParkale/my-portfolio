@@ -6,8 +6,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LanguageIcon from "@mui/icons-material/Language";
 import data from "./projects.json";
 
-
-
 function SectionSix() {
   const [btn1, setBtn1] = useState(true);
   const [btn2, setBtn2] = useState(false);
@@ -26,7 +24,6 @@ function SectionSix() {
             setBtn4(false);
             setBtn5(false);
           }}
-        
         >
           # MERN
         </button>
@@ -84,7 +81,7 @@ function SectionSix() {
           className="sectionSix_contentSection sectionSix_contentSection_one"
           sx={{
             // border: "2px solid white",
-            overflow:"hidden"
+            overflow: "hidden",
           }}
         >
           {btn1 ? (
@@ -95,7 +92,7 @@ function SectionSix() {
                   width: { xs: "100%", sm: "80%" },
                   height: "100%",
                   overflowY: "auto",
-                  marginTop:"0vh"
+                  marginTop: "0vh",
                 }}
                 className="project-card-container"
               >
@@ -115,8 +112,8 @@ function SectionSix() {
                         justifyContent: "space-evenly",
                         backgroundColor: "#100e1b",
                         borderRadius: "15px",
-                        boxShadow:"1px 1px 8px white",
-                        marginTop:"2vh"
+                        boxShadow: "1px 1px 8px white",
+                        marginTop: "2vh",
                       }}
                       id={item.id}
                     >
@@ -130,11 +127,12 @@ function SectionSix() {
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          borderRadius:"10px"
+                          borderRadius: "10px",
                         }}
                       >
                         <img
-                          src={require('../../assets/images/projects/mern/' + item.image)}
+                          src={require("../../assets/images/projects/mern/" +
+                            item.image)}
                           className="project-card-image"
                           alt="Not found"
                         />
@@ -175,13 +173,13 @@ function SectionSix() {
                             display: "flex",
                             alignItems: "center",
                             justifyContent: { xs: "center", sm: "flex-start" },
-                            marginBottom:"2vh",
+                            marginBottom: "2vh",
                           }}
                         >
                           <Button
                             startIcon={<GitHubIcon />}
                             variant="contained"
-                            href={item.github} 
+                            href={item.github}
                             target="_blank"
                             sx={{
                               marginRight: "1vw",
@@ -197,7 +195,7 @@ function SectionSix() {
                           <Button
                             startIcon={<LanguageIcon />}
                             variant="contained"
-                            href={item.demo} 
+                            href={item.demo}
                             target="_blank"
                             sx={{
                               marginRight: "1vw",
@@ -216,258 +214,260 @@ function SectionSix() {
             </>
           ) : btn2 ? (
             <>
-            <Box
-              sx={{
-                // border: "2px solid blue",
-                width: { xs: "100%", sm: "80%" },
-                height: "100%",
-                overflowY: "auto",
-                marginTop:"0vh"
-              }}
-              className="project-card-container"
-            >
-              {data.map((project) =>
-                project.react.map((item) => (
-                  <Box
-                    className="project-card-holder"
-                    id={item.id}
-                    sx={{
-                      // border: "2px solid red",
-                      width: "80%",
-                      margin: "0 auto",
-                      minHeight: "30vh",
-                      marginBottom: "4vh",
-                      display: "flex",
-                      flexDirection: { xs: "column", sm: "row" },
-                      alignItems: "center",
-                      justifyContent: "space-evenly",
-                      backgroundColor: "#100e1b",
-                      borderRadius: "15px",
-                      boxShadow:"1px 1px 8px white",
-                      marginTop:"2vh"
-                    }}
-                  >
+              <Box
+                sx={{
+                  // border: "2px solid blue",
+                  width: { xs: "100%", sm: "80%" },
+                  height: "100%",
+                  overflowY: "auto",
+                  marginTop: "0vh",
+                }}
+                className="project-card-container"
+              >
+                {data.map((project) =>
+                  project.react.map((item) => (
                     <Box
-                      className="project-card-holder-sec-one"
+                      className="project-card-holder"
+                      id={item.id}
                       sx={{
-                        // border: "2px solid white",
-                        width: { xs: "90%", sm: "27%" },
-                        minHeight: { xs: "20vh", sm: "25vh" },
-                        marginTop: { xs: "2vh", sm: "0" },
+                        // border: "2px solid red",
+                        width: "80%",
+                        margin: "0 auto",
+                        minHeight: "30vh",
+                        marginBottom: "4vh",
                         display: "flex",
+                        flexDirection: { xs: "column", sm: "row" },
                         alignItems: "center",
-                        justifyContent: "center",
-                        borderRadius:"10px"
-                      }}
-                    >
-                      <img
-                        src={require('../../assets/images/projects/reactjs/' + item.image)}
-                        className="project-card-image"
-                        alt="Not found"
-                      />
-                    </Box>
-                    <Box
-                      className="project-card-holder-sec-two"
-                      sx={{
-                        // border: "2px solid white",
-                        width: { xs: "100%", sm: "60%" },
-                        minHeight: "22vh",
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "column",
                         justifyContent: "space-evenly",
+                        backgroundColor: "#100e1b",
+                        borderRadius: "15px",
+                        boxShadow: "1px 1px 8px white",
+                        marginTop: "2vh",
                       }}
                     >
                       <Box
+                        className="project-card-holder-sec-one"
                         sx={{
                           // border: "2px solid white",
-                          width: "100%",
-                          minHeight: "12vh",
+                          width: { xs: "90%", sm: "27%" },
+                          minHeight: { xs: "20vh", sm: "25vh" },
+                          marginTop: { xs: "2vh", sm: "0" },
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          flexDirection: "column",
-                          marginBottom: "1vh",
+                          borderRadius: "10px",
                         }}
                       >
-                        <h2>{item.name}</h2>
-                        <p>{item.description}</p>
+                        <img
+                          src={require("../../assets/images/projects/reactjs/" +
+                            item.image)}
+                          className="project-card-image"
+                          alt="Not found"
+                        />
                       </Box>
-
                       <Box
+                        className="project-card-holder-sec-two"
                         sx={{
                           // border: "2px solid white",
-                          width: "100%",
-                          minHeight: "7vh",
+                          width: { xs: "100%", sm: "60%" },
+                          minHeight: "22vh",
                           display: "flex",
                           alignItems: "center",
-                          justifyContent: { xs: "center", sm: "flex-start" },
-                          marginBottom:"2vh",
+                          flexDirection: "column",
+                          justifyContent: "space-evenly",
                         }}
                       >
-                        <Button
-                          startIcon={<GitHubIcon />}
-                          variant="contained"
-                          href={item.github} 
-                          target="_blank"
+                        <Box
                           sx={{
-                            marginRight: "1vw",
-                            backgroundColor: "#6e57e0",
-                            fontSize: { xs: "10px", sm: "12px" },
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "12vh",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
+                            flexDirection: "column",
+                            marginBottom: "1vh",
                           }}
                         >
-                          GitHub
-                        </Button>
-                        <Button
-                          startIcon={<LanguageIcon />}
-                          variant="contained"
-                          href={item.demo} 
-                          target="_blank"
+                          <h2>{item.name}</h2>
+                          <p>{item.description}</p>
+                        </Box>
+
+                        <Box
                           sx={{
-                            marginRight: "1vw",
-                            backgroundColor: "#6e57e0",
-                            fontSize: { xs: "10px", sm: "12px" },
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "7vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: { xs: "center", sm: "flex-start" },
+                            marginBottom: "2vh",
                           }}
                         >
-                          Demo
-                        </Button>
+                          <Button
+                            startIcon={<GitHubIcon />}
+                            variant="contained"
+                            href={item.github}
+                            target="_blank"
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            GitHub
+                          </Button>
+                          <Button
+                            startIcon={<LanguageIcon />}
+                            variant="contained"
+                            href={item.demo}
+                            target="_blank"
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                            }}
+                          >
+                            Demo
+                          </Button>
+                        </Box>
                       </Box>
                     </Box>
-                  </Box>
-                ))
-              )}
-            </Box>
-          </>
+                  ))
+                )}
+              </Box>
+            </>
           ) : btn3 ? (
             <>
-            <Box
-              sx={{
-                // border: "2px solid blue",
-                width: { xs: "100%", sm: "80%" },
-                height: "100%",
-                overflowY: "auto",
-                marginTop:"0vh"
-              }}
-              className="project-card-container"
-            >
-              {data.map((project) =>
-                project.jscript.map((item) => (
-                  <Box
-                    className="project-card-holder"
-                    id={item.id}
-                    sx={{
-                      // border: "2px solid red",
-                      width: "80%",
-                      margin: "0 auto",
-                      minHeight: "30vh",
-                      marginBottom: "4vh",
-                      display: "flex",
-                      flexDirection: { xs: "column", sm: "row" },
-                      alignItems: "center",
-                      justifyContent: "space-evenly",
-                      backgroundColor: "#100e1b",
-                      borderRadius: "15px",
-                      boxShadow:"1px 1px 8px white",
-                      marginTop:"2vh"
-                    }}
-                  >
+              <Box
+                sx={{
+                  // border: "2px solid blue",
+                  width: { xs: "100%", sm: "80%" },
+                  height: "100%",
+                  overflowY: "auto",
+                  marginTop: "0vh",
+                }}
+                className="project-card-container"
+              >
+                {data.map((project) =>
+                  project.jscript.map((item) => (
                     <Box
-                      className="project-card-holder-sec-one"
+                      className="project-card-holder"
+                      id={item.id}
                       sx={{
-                        // border: "2px solid white",
-                        width: { xs: "90%", sm: "27%" },
-                        minHeight: { xs: "20vh", sm: "25vh" },
-                        marginTop: { xs: "2vh", sm: "0" },
+                        // border: "2px solid red",
+                        width: "80%",
+                        margin: "0 auto",
+                        minHeight: "30vh",
+                        marginBottom: "4vh",
                         display: "flex",
+                        flexDirection: { xs: "column", sm: "row" },
                         alignItems: "center",
-                        justifyContent: "center",
-                        borderRadius:"10px"
-                      }}
-                    >
-                      <img
-                        src={require('../../assets/images/projects/js/' + item.image)}
-                        className="project-card-image"
-                        alt="Not found"
-                      />
-                    </Box>
-                    <Box
-                      className="project-card-holder-sec-two"
-                      sx={{
-                        // border: "2px solid white",
-                        width: { xs: "100%", sm: "60%" },
-                        minHeight: "22vh",
-                        display: "flex",
-                        alignItems: "center",
-                        flexDirection: "column",
                         justifyContent: "space-evenly",
+                        backgroundColor: "#100e1b",
+                        borderRadius: "15px",
+                        boxShadow: "1px 1px 8px white",
+                        marginTop: "2vh",
                       }}
                     >
                       <Box
+                        className="project-card-holder-sec-one"
                         sx={{
                           // border: "2px solid white",
-                          width: "100%",
-                          minHeight: "12vh",
+                          width: { xs: "90%", sm: "27%" },
+                          minHeight: { xs: "20vh", sm: "25vh" },
+                          marginTop: { xs: "2vh", sm: "0" },
                           display: "flex",
                           alignItems: "center",
                           justifyContent: "center",
-                          flexDirection: "column",
-                          marginBottom: "1vh",
+                          borderRadius: "10px",
                         }}
                       >
-                        <h2>{item.name}</h2>
-                        <p>{item.description}</p>
+                        <img
+                          src={require("../../assets/images/projects/js/" +
+                            item.image)}
+                          className="project-card-image"
+                          alt="Not found"
+                        />
                       </Box>
-
                       <Box
+                        className="project-card-holder-sec-two"
                         sx={{
                           // border: "2px solid white",
-                          width: "100%",
-                          minHeight: "7vh",
+                          width: { xs: "100%", sm: "60%" },
+                          minHeight: "22vh",
                           display: "flex",
                           alignItems: "center",
-                          justifyContent: { xs: "center", sm: "flex-start" },
-                          marginBottom:"2vh",
+                          flexDirection: "column",
+                          justifyContent: "space-evenly",
                         }}
                       >
-                        <Button
-                          startIcon={<GitHubIcon />}
-                          variant="contained"
-                          href={item.github} 
-                          target="_blank"
+                        <Box
                           sx={{
-                            marginRight: "1vw",
-                            backgroundColor: "#6e57e0",
-                            fontSize: { xs: "10px", sm: "12px" },
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "12vh",
                             display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
+                            flexDirection: "column",
+                            marginBottom: "1vh",
                           }}
                         >
-                          GitHub
-                        </Button>
-                        <Button
-                          startIcon={<LanguageIcon />}
-                          variant="contained"
-                          href={item.demo} 
-                          target="_blank"
+                          <h2>{item.name}</h2>
+                          <p>{item.description}</p>
+                        </Box>
+
+                        <Box
                           sx={{
-                            marginRight: "1vw",
-                            backgroundColor: "#6e57e0",
-                            fontSize: { xs: "10px", sm: "12px" },
+                            // border: "2px solid white",
+                            width: "100%",
+                            minHeight: "7vh",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: { xs: "center", sm: "flex-start" },
+                            marginBottom: "2vh",
                           }}
                         >
-                          Demo
-                        </Button>
+                          <Button
+                            startIcon={<GitHubIcon />}
+                            variant="contained"
+                            href={item.github}
+                            target="_blank"
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            GitHub
+                          </Button>
+                          <Button
+                            startIcon={<LanguageIcon />}
+                            variant="contained"
+                            href={item.demo}
+                            target="_blank"
+                            sx={{
+                              marginRight: "1vw",
+                              backgroundColor: "#6e57e0",
+                              fontSize: { xs: "10px", sm: "12px" },
+                            }}
+                          >
+                            Demo
+                          </Button>
+                        </Box>
                       </Box>
                     </Box>
-                  </Box>
-                ))
-              )}
-            </Box>
-          </>
+                  ))
+                )}
+              </Box>
+            </>
           ) : btn4 ? (
             <>
               <Box

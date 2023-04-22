@@ -14,7 +14,10 @@ function SectionEight() {
       <div className="sec-eight-form">
         <div className="sec-eight-form-1">
           <div className="sec-eight-form-1-inner">
-            <div className="social-link-holder">
+            <div
+              className="social-link-holder"
+              onClick={() => window.open("tel:7350427767")}
+            >
               <div className="social-icon-holder">
                 <PhoneOutlined />
               </div>
@@ -25,7 +28,12 @@ function SectionEight() {
                 <div className="social-username">+91 7350427767</div>
               </div>
             </div>
-            <div className="social-link-holder">
+            <div
+              className="social-link-holder"
+              onClick={() =>
+                (window.open ("mailto:atharva.parkale@gmail.com"))
+              }
+            >
               <div className="social-icon-holder">
                 <EmailOutlined />
               </div>
@@ -36,7 +44,15 @@ function SectionEight() {
                 <div className="social-username">atharva.parkale@gmail.com</div>
               </div>
             </div>
-            <div className="social-link-holder">
+            <div
+              className="social-link-holder"
+              onClick={() => {
+                window.open(
+                  "https://instagram.com/_atharvaparkale_167?igshid=ZDdkNTZiNTM=",
+                  "_blank"
+                );
+              }}
+            >
               <div className="social-icon-holder">
                 <BsInstagram />
               </div>
@@ -47,7 +63,15 @@ function SectionEight() {
                 <div className="social-username">_atharvaparkale_167</div>
               </div>
             </div>
-            <div className="social-link-holder">
+            <div
+              className="social-link-holder"
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/atharvaparkale/",
+                  "_blank"
+                );
+              }}
+            >
               <div className="social-icon-holder">
                 <BsLinkedin />
               </div>
@@ -62,7 +86,12 @@ function SectionEight() {
               <div className="social-icon-holder">
                 <BsGithub />
               </div>
-              <div className="social-link">
+              <div
+                className="social-link"
+                onClick={() => {
+                  window.open("https://github.com/AtharvaParkale", "_blank");
+                }}
+              >
                 <div className="social-tag">
                   <span>GitHub</span>
                 </div>
