@@ -16,6 +16,13 @@
     /* border: 2px solid white; */
     color: white;
     margin-top: 2vh;
+    text-align: center;
+    width: 80%;
+    font-weight: 600;
+}
+.inner-load-holder span{
+  color:#6e57e0;
+  font-weight: 600;
 }
 .loading_sticker_holder{
     /* border: 2px solid white; */

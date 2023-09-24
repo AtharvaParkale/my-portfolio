@@ -5,9 +5,9 @@
         "id":1,
         "name": "ShopHub",
         "description": "Using the MERN stack, I created a web application for shopping that includes a MongoDB database and a React-based frontend. The app allows users to browse and purchase products through a Node.js backend.",
-        "image": "shophub_thumbnail.png",
-        "github": "https://github.com/AtharvaParkale",
-        "demo": "https://github.com/AtharvaParkale"
+        "image": "shophub_thum.png",
+        "github": "https://github.com/AtharvaParkale/ShopHub",
+        "demo": "https://splendid-shortbread-20860a.netlify.app/"
       },
       {
         "id":2,
@@ -16,6 +16,14 @@
         "image": "sociopedia_thumbnail.png",
         "github": "https://github.com/AtharvaParkale/social-media-webapp",
         "demo": "https://sociopedia-by-atharva.netlify.app/"
+      },
+      {
+        "id":2,
+        "name": "Clockify Dashboard",
+        "description": "Utilizing the MERN stack, I developed a  clockify dashboard. This Clockify project offers robust time-tracking and management capabilities, allowing users to efficiently monitor their work hours, organize tasks, and enhance productivity. ",
+        "image": "clockify_thumbnail.png",
+        "github": "https://github.com/AtharvaParkale/valueplusclockify",
+        "demo": "https://clockify-by-atharva-parkale.netlify.app/"
       },
       {
         "id":3,

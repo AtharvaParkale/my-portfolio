@@ -42,7 +42,7 @@ function SectionTwo() {
             <button
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1E81AjE1bZV_f2ubWjR8MY66caw1H7sev/view?usp=sharing",
+                  "https://drive.google.com/file/d/1Gwp_rbDtyokpwqeA_xujt9dciQGnnAT7/view?usp=drive_link",
                   "_blank"
                 );
               }}
