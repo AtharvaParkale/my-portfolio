@@ -27,9 +27,7 @@ function SectionOne() {
               <span>Atharva Parkale</span>
             </h1>
             <p>
-              A fullstack web developer and a problem solver !<br />
-              Currently I am pursuing computer science engineering at VIT
-              Vellore .
+              A software developer passionate about building, learning, and solving real-world problems!
             </p>
           </div>
           <div className="sectionone_buttons">
