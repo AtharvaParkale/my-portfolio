@@ -15,14 +15,10 @@ function SectionTwo() {
         <div className="about_text">
           <h1>About Me</h1>
           <p className="txt_abt">
-            I am a full-stack developer with over one year of experience in
-            ReactJs and NodeJs. I am passionate about building elegant, simple,
-            and functional software.
-            <br /> I love to update my tech stack with the latest technologies.
-            I have completed two internships until now, and have worked on many
-            different projects.
+            I’m a software developer with over a year of experience, passionate about building elegant and functional software that solves real-world problems.
+            I graduated from VIT Vellore in 2024 with a B.Tech in Computer Science.
+            I enjoy designing efficient systems, writing clean code, and continuously improving my craft. I love turning ideas into impactful digital products that make a difference.
           </p>
-
           <div className="stat-holder">
             <div className="stat">
               <h2 className="stat-val">10+</h2>
@@ -31,11 +27,11 @@ function SectionTwo() {
             </div>
             <div className="stat">
               <h2 className="stat-val">02+ yr</h2>
-              <p>Dev Experience</p>
+              <p>Experience</p>
             </div>
             <div className="stat">
-              <h2 className="stat-val">02</h2>
-              <p>Internships</p>
+              <h2 className="stat-val">300+ ques</h2>
+              <p>LeetCode</p>
             </div>
           </div>
           <div className="cv-button">

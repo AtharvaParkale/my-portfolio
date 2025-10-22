@@ -26,7 +26,6 @@ function App() {
           <SectionSix />
           <SectionSeven />
           <SectionFour />
-          {/* <SectionFive /> */}
           <SectionEight />
           <Footer />
         </div>
