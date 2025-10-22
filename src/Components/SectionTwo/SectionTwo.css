@@ -36,7 +36,8 @@
 .problem_image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+    border-radius: 3vh;
 }
 .about_text {
   display: flex;

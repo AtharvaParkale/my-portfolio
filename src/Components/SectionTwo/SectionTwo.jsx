@@ -1,6 +1,6 @@
 import React from "react";
 import "./SectionTwo.css";
-import problem_image from "../../assets/images/about_me3-min.jpg";
+import problem_image from "../../assets/images/profile_pic.jpg";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 
 function SectionTwo() {
@@ -22,7 +22,6 @@ function SectionTwo() {
           <div className="stat-holder">
             <div className="stat">
               <h2 className="stat-val">10+</h2>
-
               <p>Projects</p>
             </div>
             <div className="stat">
