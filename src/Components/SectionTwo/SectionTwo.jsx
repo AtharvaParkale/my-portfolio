@@ -37,7 +37,7 @@ function SectionTwo() {
             <button
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1Gwp_rbDtyokpwqeA_xujt9dciQGnnAT7/view?usp=drive_link",
+                  "https://drive.google.com/file/d/1yMHwhTy6qdMxLREKjHUO6BD_W386xPiy/view?usp=sharing",
                   "_blank"
                 );
               }}
